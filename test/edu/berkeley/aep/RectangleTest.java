@@ -34,4 +34,10 @@ public class RectangleTest {
         var square = Rectangle.createSquare(3);
         assertEquals(9, square.area());
     }
+
+    @Test
+    public void squareOfSideFourShouldHaveAreaSixteen() {
+        var square = Rectangle.createSquare(4);
+        assertEquals(16, square.area());
+    }
 }

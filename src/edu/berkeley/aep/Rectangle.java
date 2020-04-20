@@ -23,6 +23,6 @@ public class Rectangle {
     }
 
     public int perimeter() {
-        return 2 * length + 3 * width;
+        return 2 * length + 2 * width;
     }
 }
