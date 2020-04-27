@@ -23,6 +23,12 @@ public class CircleTest {
         var circle = new Circle(4);
         assertEquals((Math.PI * 4 * 4), circle.area(), DELTA);
     }
+
+    @Test
+    public void PerimeterofCircle(){
+        var circle = new Circle(1);
+        assertEquals((Math.PI * 2 * 1), circle.perimeter(), DELTA);
+    }
 }
 
 

@@ -22,8 +22,10 @@ public class TriangleTest {
         assertEquals(6, triangle.area());
     }
 
-//    @Test
-//    public void ThreeSidesFormAValidTriangle() {
-//        var triangle = new Triangle(3, 4, 5);
-//    }
+    @Test
+    public void defineAnIncircleOfATriangle() {
+        var triangle = new Triangle(3, 4, 5);
+        var circle = new Circle(6/6);
+        assertEquals(circle, triangle.incircle());
+    }
 }
