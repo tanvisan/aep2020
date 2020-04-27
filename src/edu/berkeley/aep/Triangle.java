@@ -1,5 +1,6 @@
 package edu.berkeley.aep;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.lang.*;
@@ -11,13 +12,17 @@ public class Triangle {
     public final int s2;
     public final int s3;
 
-    public static Triangle createTriangleFromSides(int s1, int s2, int s3) {
+    public static Triangle createTriangleFromSides(int s1, int s2, int s3) throws Exception {
 
         return new Triangle(s1, s2, s3);
 
     }
 
     public Triangle(int s1, int s2, int s3) {
+//            throws Exception {
+//        if ((s1 + s2 < s3) | (s1 + s3 < s2) | (s2 + s3 < s1)) {
+//            throw new Exception();
+//        }
         this.s1 = s1;
         this.s2 = s2;
         this.s3 = s3;
@@ -33,4 +38,5 @@ public class Triangle {
 
         return s1 + s2 + s3;
     }
+
 }
