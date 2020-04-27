@@ -17,6 +17,12 @@ public class CircleTest {
         var circle = new Circle(0);
         assertEquals(0, circle.area(), DELTA);
     }
+
+    @Test
+    public void AreaOfCircle(){
+        var circle = new Circle(4);
+        assertEquals((Math.PI * 4 * 4), circle.area(), DELTA);
+    }
 }
 
 
