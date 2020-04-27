@@ -39,9 +39,14 @@ public class Triangle {
         return s1 + s2 + s3;
     }
 
-    public Circle incircle() {
+    protected Circle incircle() {
         double sp = (s1 + s2 + s3) / 2;
         double inradius = this.area()/sp;
         return new Circle(inradius);
+    }
+
+    public Circle outcircle() {
+        int productSides = s1 * s2 * s3;
+        return new Circle(productSides/ (4 * this.area()));
     }
 }

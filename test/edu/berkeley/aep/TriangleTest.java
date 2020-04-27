@@ -28,4 +28,11 @@ public class TriangleTest {
         var circle = new Circle(6/6);
         assertEquals(circle, triangle.incircle());
     }
+
+    @Test
+    public void defineACircumcircleOfATriangle() {
+        var triangle = new Triangle(5, 12, 13);
+        var circle = new Circle(65/10);
+        assertEquals(circle, triangle.outcircle());
+    }
 }
