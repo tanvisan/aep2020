@@ -47,4 +47,15 @@ public class TriangleTest {
         assertTrue(areaIncircle < areaTriangle);
         assertEquals(incircle, circleObj);
     }
+
+    @Test
+    public void AreaofCircumcircleMoreThanAreaOfTriangle() {
+        var triangle = new Triangle(5, 12, 13);
+        var outcircle = triangle.outcircle();
+        var areaTriangle = triangle.area();
+        var areaOutcircle = outcircle.area();
+        var circleObj = new Circle(65/10);
+        assertTrue(areaOutcircle > areaTriangle);
+        assertEquals(outcircle, circleObj);
+    }
 }
