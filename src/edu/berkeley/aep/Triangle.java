@@ -23,13 +23,13 @@ public class Triangle {
         this.s3 = s3;
     }
 
-    public int area() {
+    protected int area() {
         float sp = (s1 + s2 + s3) / 2;
         var area = Math.sqrt(sp*(sp - s1)*(sp - s2)*(sp - s3));
         return (int) area;
     }
 
-    public int perimeter() {
+    protected int perimeter() {
 
         return s1 + s2 + s3;
     }
